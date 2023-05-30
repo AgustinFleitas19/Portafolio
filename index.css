@@ -1,0 +1,202 @@
+:root {
+  --ColorPrincipal: #ebe410;
+}
+html {
+  background: black;
+  background-repeat: no-repeat;
+}
+
+/* navegador */
+.btn-menu {
+  color: var(--ColorPrincipal);
+  display: flex;
+  justify-content: flex-end;
+}
+/* nueva barra de navegacion */
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: var(--ColorPrincipal);
+    font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  border-radius: 40px;
+  text-decoration:none;
+}
+a:hover {
+  background-color: rgba(226, 210, 210, 0.313);
+  background-size: 50px;
+  color: aqua;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.button-menu-toggle {
+  display: none;
+}
+/* aqui termina la nueva barra de navegacion */
+.btn-nav {
+  background-color: black;
+  color: #f2ed6b;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 9px;
+  border-radius: 40px;
+  border: none;
+  margin-left: 15px;
+}
+.btn-nav:hover {
+  background-color: rgba(226, 210, 210, 0.313);
+  background-size: 50px;
+  color: aqua;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* rgba(19, 204, 142, 0.452); */
+/* seccion de la carta */
+.princ-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ColorPrincipal);
+  border-radius: 20px;
+  margin: 10%;
+  padding: 90px;
+  width: 80%;
+  height: 30%;
+}
+.princ-card:hover {
+  background-color: aqua;
+}
+
+.caract-card {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: beige;
+  margin: 0px;
+  font-size: 70px;
+}
+section p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0px;
+  font-size: 40px;
+  color: white;
+}
+.icon-tech {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.form-contact {
+
+  display: flex;
+ justify-content: center;
+  background-color: var(--ColorPrincipal);
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-items{
+  width: 90%;
+  height: 20%;
+  border-radius: 20px;
+ margin: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+
+a{
+font-size:30px
+
+}
+a:hover{
+  background-size:100px;
+}
+  .column {
+    flex: 100%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ 
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20,20,20,0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+
+
+  }
+}
